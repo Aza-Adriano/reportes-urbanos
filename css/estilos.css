@@ -28,3 +28,47 @@
 .filtros button:hover {
     background-color: #2980b9;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.estado-recibido {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.estado-en-proceso {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.estado-resuelto {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.exito {
+    color: #27ae60;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #d4edda;
+    border-radius: 4px;
+}
