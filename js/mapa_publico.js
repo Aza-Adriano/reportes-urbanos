@@ -40,7 +40,8 @@ function cargarReportes(categoria = '', estado = '') {
                     <img src="uploads/${reporte.foto}" alt="Foto" style="width: 100%; max-width: 200px;"><br>
                     <small>Estado: ${reporte.estado}</small><br>
                     <small>Reportado por: ${reporte.usuario}</small><br>
-                    <small>Fecha: ${reporte.fecha_creacion}</small>
+                    <small>Fecha: ${reporte.fecha_creacion}</small><br>
+                    <a href="detalle_reporte.php?id=${reporte.id}">Ver detalle</a>
                 `;
 
                 marcador.bindPopup(popup);
