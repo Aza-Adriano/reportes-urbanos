@@ -35,6 +35,9 @@
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required minlength="6">
 
+            <label for="codigo_admin">Código de administrador (opcional):</label>
+            <input type="text" id="codigo_admin" name="codigo_admin" placeholder="Solo si eres administrador">
+
             <button type="submit">Registrarse</button>
         </form>
 

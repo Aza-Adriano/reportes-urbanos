@@ -20,10 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Límites aproximados del Macrodistrito Centro de La Paz
-    $lat_min = -16.53;
-    $lat_max = -16.48;
-    $lng_min = -68.17;
-    $lng_max = -68.12;
+    $lat_min = -16.52;
+    $lat_max = -16.485;
+    $lng_min = -68.16;
+    $lng_max = -68.10;
 
 if ($latitud < $lat_min || $latitud > $lat_max || $longitud < $lng_min || $longitud > $lng_max) {
     header("Location: ../crear_reporte.php?error=La ubicación debe estar dentro del Macrodistrito Centro");
