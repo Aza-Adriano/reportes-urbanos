@@ -11,7 +11,7 @@ $sql = "SELECT r.id, r.descripcion, r.foto, r.latitud, r.longitud, r.estado, r.f
         FROM reportes r
         JOIN categorias c ON r.categoria_id = c.id
         JOIN usuarios u ON r.usuario_id = u.id
-        WHERE 1=1";
+        WHERE r.estado != 'recibido'";
 
 $params = [];
 $types = "";

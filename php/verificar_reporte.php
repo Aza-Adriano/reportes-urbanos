@@ -10,7 +10,7 @@ if (!isset($_SESSION['usuario_id'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $reporte_id = intval($_POST['reporte_id']);
     $usuario_id = $_SESSION['usuario_id'];
-    $tipo = $_POST['tipo']; // 'verificacion' o 'denuncia'
+    $tipo = $_POST['tipo'];
     $comentario = isset($_POST['comentario']) ? trim($_POST['comentario']) : '';
 
     if (!in_array($tipo, ['verificacion', 'denuncia'])) {

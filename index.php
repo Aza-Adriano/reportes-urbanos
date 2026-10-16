@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes Urbanos - Macrodistrito Centro</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <header>
-        <h1>Reportes Urbanos</h1>
-        <p>Macrodistrito Centro - La Paz</p>
-    </header>
+<?php
+session_start();
+include 'header.php';
+?>
 
-    <nav>
-        <a href="index.php">Inicio</a>
-        <a href="login.php">Iniciar Sesión</a>
-        <a href="registro.php">Registrarse</a>
-    </nav>
+<h2>Bienvenido</h2>
+<p>Sistema web para reportar y dar seguimiento a problemas urbanos en el Macrodistrito Centro de La Paz.</p>
+<p><a href="mapa.php">Ver mapa de reportes</a></p>
 
-    <main>
-        <h2>¡Bienvenido!</h2>
-        <p>Sistema web de reporte y seguimiento de problemas urbanos.</p>
-    </main>
-</body>
-</html>
+<?php include 'footer.php'; ?>
